@@ -24,6 +24,7 @@ public class SingletonWithPrototypeTest1 {
         assertThat(prototypeBean2.getCount()).isEqualTo(1);
     }
 
+
     @Scope("prototype")
     static class PrototypeBean {
         private int count = 0;
