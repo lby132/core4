@@ -22,6 +22,7 @@ public class SingletonWithPrototypeTest2 {
         ClientBean clientBean2 = ac.getBean(ClientBean.class);
         int count2 = clientBean1.logic();
         assertThat(count2).isEqualTo(2);
+
     }
 
     static class ClientBean {
